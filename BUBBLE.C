@@ -6,15 +6,11 @@ int n,i,j,temp,t;
 int ar[10];
 clrscr();
 n=10;
-    // Seed the random number generator
     srand(time(NULL));
 
-    // Fill array with random numbers (0–99)
     for ( i = 0; i < n; i++) {
 	ar[i] = rand() % 100;
     }
-
-    // Print the array
     for (i = 0; i < n; i++) {
 	printf("%d ", ar[i]);
     }
@@ -39,5 +35,6 @@ printf("%d \t",ar[i]);
 printf("time complexity is %d",t);
 getch();
 }
+
 
 
